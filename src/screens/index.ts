@@ -1,5 +1,5 @@
 export { default as HomeScreen } from './home'
-export { default as PostsScreen } from './posts'
-export { default as PostDetailScreen } from './post-detail'
-export { default as LoginScreen } from './login'
-
+export { default as AuthScreen } from './auth'
+export { default as BlogsScreen } from './blogs'
+export { default as DashBoardScreen } from './dashboard'
+export { default as CreateBlogScreen } from './createblog'
