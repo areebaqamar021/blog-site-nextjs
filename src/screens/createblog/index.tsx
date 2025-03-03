@@ -27,7 +27,7 @@ function CreateBlogScreen() {
   }, [title, form])
 
   return (
-    <div>
+    <div className="w-full max-w-lg p-6">
       <Form
         form={form}
         onFinish={onFinish}
