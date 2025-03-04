@@ -12,7 +12,6 @@ export const createBlogAction = async (data: CreateBlogInput) => {
             user: {
                 connect: { id: user_id },
             }
-
         }
     })
 }
