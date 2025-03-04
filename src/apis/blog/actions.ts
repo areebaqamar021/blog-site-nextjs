@@ -16,6 +16,13 @@ export const createBlogAction = async (data: CreateBlogInput) => {
     })
 }
 
+export const deleteBlogAction = async ({ id }: { id: string }) => {
+    const user_id = (await getUser())?.id
+    return await db.blog.delete({
+        where: { id, user_id }
+    })
+}
+
 
 export const getBlogs = async (props: GetBlogsInput) => {
     const { published, user, query } = props
