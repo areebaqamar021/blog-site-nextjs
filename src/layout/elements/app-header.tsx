@@ -29,7 +29,6 @@ function AppHeader() {
         </Button>
       ) : (
         pathname !== "/auth" && <Link href="/auth">
-          
           <Button
             type="text"
             className="text-xl font-semibold"
