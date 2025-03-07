@@ -14,34 +14,34 @@ function SignUp() {
   return (
     <Form layout="vertical" onFinish={onFinish}>
       <Form.Item
-        label={<span className="text-[#2d3748] font-medium">Email</span>}
+        label={<span className="text-black font-medium">Email</span>}
         name="email"
         rules={[{ required: true, message: "Please enter your email!" }]}
       >
         <Input placeholder="Enter your email" />
       </Form.Item>
       <Form.Item
-        label={<span className="text-[#2d3748] font-medium">Name</span>}
+        label={<span className="text-black font-medium">Name</span>}
         name="name"
         rules={[{ required: true, message: "Please enter your name!" }]}
       >
         <Input placeholder="Enter your email" />
       </Form.Item>
       <Form.Item
-        label={<span className="text-[#2d3748] font-medium">Password</span>}
+        label={<span className="text-black font-medium">Password</span>}
         name="password"
         rules={[{ required: true, message: "Please enter your password!" }]}
       >
         <Input.Password placeholder="Enter your password" />
       </Form.Item>
       <Form.Item className="flex justify-between items-center">
-        <Checkbox className="text-[#2d3748]">
-          <span>Accept</span>
-          <Link href="" className="text-[#2b6cb0] hover:underline">
+        <Checkbox className="text-black">
+          <span>Accept  </span>
+          <Link href="" className="text-black hover:underline">
             Terms
           </Link>
           <span>&</span>
-          <Link href="" className="text-[#2b6cb0] hover:underline">
+          <Link href="" className="text-black hover:underline">
             Conditions
           </Link>
         </Checkbox>
@@ -52,7 +52,7 @@ function SignUp() {
           loading={isPending}
           type="primary"
           htmlType="submit"
-          className="w-full bg-[#2b6cb0] border-none text-white font-semibold py-2 hover:bg-[#2c5282]"
+          className="w-full bg-black border-none text-white font-semibold py-2"
         >
           Sign Up
         </Button>

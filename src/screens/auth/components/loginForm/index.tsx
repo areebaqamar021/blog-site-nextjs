@@ -14,21 +14,21 @@ function Login() {
     return (
         <Form layout="vertical" onFinish={onFinish}>
             <Form.Item
-                label={<span className="text-[#2d3748] font-medium">Email</span>}
+                label={<span className="text-black font-medium">Email</span>}
                 name="email"
                 rules={[{ required: true, message: "Please enter your email!" }]}
             >
                 <Input placeholder="Enter your email" />
             </Form.Item>
             <Form.Item
-                label={<span className="text-[#2d3748] font-medium">Password</span>}
+                label={<span className="text-black font-medium">Password</span>}
                 name="password"
                 rules={[{ required: true, message: "Please enter your password!" }]}
             >
                 <Input.Password placeholder="Enter your password" />
             </Form.Item>
             <Form.Item className="flex justify-between items-center">
-                <Checkbox className="text-[#2d3748]">Remember me</Checkbox>
+                <Checkbox className="text-black">Remember me</Checkbox>
                 <Link href="/forgot-password" className="text-[#2b6cb0] hover:underline">
                     Forgot password?
                 </Link>
@@ -38,7 +38,7 @@ function Login() {
                     loading={isPending}
                     type="primary"
                     htmlType="submit"
-                    className="w-full bg-[#2b6cb0] border-none text-white font-semibold py-2 hover:bg-[#2c5282]"
+                    className="w-full bg-black border-none text-white font-semibold py-2"
                 >
                     Login
                 </Button>

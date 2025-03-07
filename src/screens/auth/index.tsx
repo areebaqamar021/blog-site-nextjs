@@ -23,7 +23,7 @@ const items: TabsProps['items'] = [
 
 function AuthScreen() {
     return (
-        <div className='h-full flex justify-center items-center'>
+        <div className='h-full flex justify-center items-center bg-customBeige'>
             <Card className='w-96'>
                 <Tabs type='card' className='[&_.ant-tabs-nav-list]:w-full [&_.ant-tabs-tab]:flex-1' defaultActiveKey="1" items={items} onChange={onChange} />
             </Card>
