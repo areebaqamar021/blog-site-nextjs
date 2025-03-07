@@ -1,13 +1,12 @@
 import React from 'react'
 import Link from 'next/link';
 import { Layout, Menu } from 'antd';
-import Image from 'next/image';
 
 const items = [
-  {
-    label: <Link href='/'>Home</Link>,
-    key: 'home',
-  },
+  // {
+  //   label: <Link href='/'>Home</Link>,
+  //   key: 'home',
+  // },
   {
     label: <Link href='/dashboard'>Dashboard</Link>,
     key: 'dashboard',
@@ -36,10 +35,10 @@ const items = [
 
 function SideNav() {
   return (
-      <Layout.Sider theme='light' className='h-full'>
+      <Layout.Sider theme='light' className='h-full bg-customBeige'>
         <Link href='/dashboard'>
-        <Image src={"/images/logo.png"} alt='' width={100} height={100} /></Link>
-        <Menu mode="inline" items={items} />
+        <h1 className='text-black font-bold text-3xl m-6'>Medium</h1></Link>
+        <Menu mode="inline" items={items} className='bg-customBeige'/>
       </Layout.Sider>
   )
 }
