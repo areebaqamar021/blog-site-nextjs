@@ -15,7 +15,7 @@ function AppLayout({ children }: { children: ReactNode }) {
       {user && <SideNav />}
       <Layout>
         <AppHeader />
-        <Content className='p-5 overflow-y-auto'>{children}</Content>
+        <Content className='overflow-y-auto'>{children}</Content>
       </Layout>
     </Layout>
   )
